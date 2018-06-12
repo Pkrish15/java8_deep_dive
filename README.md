@@ -33,16 +33,22 @@
 
 . What is the URL to the source code utilized to create this base Java image ? <br>
 
-* 	$ oc new-app redhat-openjdk18-openshift ~ https://github.com/jboss-openshift/openshift-quickstarts --context-dir=undertow-servlet <br><br>
-*	$ oc new-app redhat-openjdk18-openshift ~ <git_repo_URL> --context-dir=<context-dir> --build-env='ARTIFACT_DIR=relative/path/to/artifacts/dir' --build-env='MAVEN_ARGS=install -pl <groupId>:<artifactId> -am' <br><br>
+* 	$ oc new-app redhat-openjdk18-openshift ~ https://github.com/jboss-openshift/openshift-quickstarts --context-dir=undertow-servlet <br>
+*	$ oc new-app redhat-openjdk18-openshift ~ <git_repo_URL> --context-dir=<context-dir> --build-env='ARTIFACT_DIR=relative/path/to/artifacts/dir' --build-env='MAVEN_ARGS=install -pl <groupId>:<artifactId> -am' <br>
 
-*	$ oc new-build --name=<application-name> redhat-openjdk18-openshift --binary=true <br> <br>
+*	$ oc new-build --name=<application-name> redhat-openjdk18-openshift --binary=true <br>
 
 
 
 . What other JBoss middleware builds off of this base image ? <br>
-*	redhat-openjdk-18-openshift-image
-*	URL - https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image
+*	redhat-openjdk-18-openshift-image - https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image
+*       JBoss-EAP7-OpenShift-Image - https://github.com/jboss-container-images/jboss-eap-7-openshift-image/blob/eap71-dev/image.yaml
+*       JBoss-datagrid-7-openshift-image - https://github.com/jboss-container-images/jboss-datagrid-7-openshift-image
+* 	JBoss-amq-7-broker-OpenShift-Image - https://github.com/jboss-container-images/jboss-amq-7-broker-openshift-image
+*	JBoss-amqmaass-Image - https://github.com/jboss-container-images/jboss-amqmaas-image
+* 	JBoss-Kie-Modules- https://github.com/jboss-container-images/jboss-kie-modules
+*	amq-interconnect-1-openshift-image - https://github.com/jboss-container-images/amq-interconnect-1-openshift-image
+*	JBoss-amq-7-broker-image - https://github.com/jboss-container-images/jboss-amq-7-broker-image
 
 
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?

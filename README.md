@@ -1,7 +1,7 @@
 # java8_deep_dive
 . What is the name and URL to the Java base image available in OCP ?<br>
-     S2I Builder Image <br>
-	redhat-openjdk18-openshift <br>
+     $ S2I Builder Image <br>
+     $ redhat-openjdk18-openshift <br>
 	
 
 . What are all of the environment variables that base image exposes ?

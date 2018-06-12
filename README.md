@@ -8,9 +8,9 @@
 	
 
 . What are all of the environment variables that base image exposes ? <br>
-	a) ARTIFACT_DIR - The relative path to the target where JAR files are created for multi-module builds. <br>
-	b) JAVA_MAIN_CLASS - The main class to use as the argument to Java. This can also be specified in the .s2i/environment file as a Maven property inside the project (docker.env.Main).<br>
-        c) MAVEN_ARGS - The arguments that are passed to the mvn command.<br>
+* ** ARTIFACT_DIR ** - The relative path to the target where JAR files are created for multi-module builds. <br>
+* ** JAVA_MAIN_CLASS ** - The main class to use as the argument to Java. This can also be specified in the .s2i/environment file as a Maven property inside the project (docker.env.Main).<br>
+* ** MAVEN_ARGS ** - The arguments that are passed to the mvn command.<br>
 	* **JAVA_APP_DIR** the directory where the application resides. All paths in your application are relative to this directory. By default it is the same directory where this startup script resides.
 * **JAVA_LIB_DIR** directory holding the Java jar files as well an optional `classpath` file which holds the classpath. Either as a single line classpath (colon separated) or with jar files listed line-by-line. If not set **JAVA_LIB_DIR** is the same as **JAVA_APP_DIR**.
 * **JAVA_OPTIONS** options to add when calling `java`

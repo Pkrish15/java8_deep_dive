@@ -41,8 +41,8 @@
 
 
 . What other JBoss middleware builds off of this base image ? <br>
-*	redhat-openjdk-18-openshift-image - https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image
-*       JBoss-EAP7-OpenShift-Image - https://github.com/jboss-container-images/jboss-eap-7-openshift-image/blob/eap71-dev/image.yaml
+*	redhat-openjdk-18-openshift-image
+*       JBoss-EAP7-OpenShift-Image
 *       JBoss-datagrid-7-openshift-image - https://github.com/jboss-container-images/jboss-datagrid-7-openshift-image
 * 	JBoss-amq-7-broker-OpenShift-Image - https://github.com/jboss-container-images/jboss-amq-7-broker-openshift-image
 *	JBoss-amqmaass-Image - https://github.com/jboss-container-images/jboss-amqmaas-image
@@ -52,7 +52,7 @@
 
 
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?
-
+* 	Yes, it is possible.
 
 . What directory path of this base Java image would a deployable "uber" jar need to be added such that it would automatically be picked up at runtime  ?
 

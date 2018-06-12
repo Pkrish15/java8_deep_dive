@@ -12,10 +12,8 @@
 	b) JAVA_MAIN_CLASS - The main class to use as the argument to Java. This can also be specified in the .s2i/environment file as a Maven property inside the project (docker.env.Main).<br>
         c) MAVEN_ARGS - The arguments that are passed to the mvn command.<br>
 
-
-
-. Where is the existing support documentation for this base Java image ?
-
+. Where is the existing support documentation for this base Java image ? <br>
+        a) https://docs.openshift.com/online/using_images/s2i_images/java.html <br>
 
 . What is the URL to the source code utilized to create this base Java image ?
 

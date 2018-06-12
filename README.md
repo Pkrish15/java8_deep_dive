@@ -31,7 +31,13 @@
 . Where is the existing support documentation for this base Java image ? <br>
 * 	https://docs.openshift.com/online/using_images/s2i_images/java.html <br>
 
-. What is the URL to the source code utilized to create this base Java image ?
+. What is the URL to the source code utilized to create this base Java image ? <br>
+
+$ oc new-app redhat-openjdk18-openshift~https://github.com/jboss-openshift/openshift-quickstarts --context-dir=undertow-servlet <br><br>
+$ oc new-app redhat-openjdk18-openshift~<git_repo_URL> --context-dir=<context-dir> --build-env='ARTIFACT_DIR=relative/path/to/artifacts/dir' --build-env='MAVEN_ARGS=install -pl <groupId>:<artifactId> -am' <br><br>
+
+$ oc new-build --name=<application-name> redhat-openjdk18-openshift --binary=true <br> <br>
+
 
 
 . What other JBoss middleware builds off of this base image ?

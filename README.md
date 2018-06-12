@@ -1,6 +1,6 @@
 # java8_deep_dive
 . What is the name and URL to the Java base image available in OCP ?<br>
-    # S2I Builder Image
+     S2I Builder Image
 
 . What are all of the environment variables that base image exposes ?
 

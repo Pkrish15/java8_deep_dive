@@ -38,8 +38,6 @@
 
 *	$ oc new-build --name=<application-name> redhat-openjdk18-openshift --binary=true <br>
 
-
-
 . What other JBoss middleware builds off of this base image ? <br>
 *	redhat-openjdk-18-openshift-image
 *       JBoss-EAP7-OpenShift-Image
@@ -50,15 +48,15 @@
 *	amq-interconnect-1-openshift-image - https://github.com/jboss-container-images/amq-interconnect-1-openshift-image
 *	JBoss-amq-7-broker-image - https://github.com/jboss-container-images/jboss-amq-7-broker-image
 
-
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?
-* 	Yes, it is possible.
+* 	Yes, it is possible. Because all the images extends s2i base image.
 
 . What directory path of this base Java image would a deployable "uber" jar need to be added such that it would automatically be picked up at runtime  ?
 
+* 	app.jar
 
-. What is the directory path to the out of the box shell scripts in that base image that get executed at start-up ?
+. What is the directory path to the out of the box shell scripts in that base image that get executed at start-up ?<br>
 
-
+*	/opt/openshift/app.jar
 . What could be the various mechanisms used to add an uber jar to that base java image in an OCP environment ?
 

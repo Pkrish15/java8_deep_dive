@@ -1,10 +1,10 @@
 # java8_deep_dive
 . What is the name and URL to the Java base image available in OCP ?<br>
-      S2I Builder Image <br>
-      redhat-openjdk18-openshift <br>
-      Fabric8 Java Base Image OpenJDK 8 (JDK) <br>
-      https://github.com/fabric8io-images/java/tree/master/images/jboss/openjdk8/jdk <br>
-      https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br>
+     a) S2I Builder Image <br>
+     b) redhat-openjdk18-openshift <br>
+     c) Fabric8 Java Base Image OpenJDK 8 (JDK) <br>
+     d) https://github.com/fabric8io-images/java/tree/master/images/jboss/openjdk8/jdk <br>
+     e) https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br>
 	
 
 . What are all of the environment variables that base image exposes ?

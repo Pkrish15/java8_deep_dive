@@ -40,7 +40,9 @@
 
 
 
-. What other JBoss middleware builds off of this base image ?
+. What other JBoss middleware builds off of this base image ? <br>
+*	redhat-openjdk-18-openshift-image
+*	URL - https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image
 
 
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?

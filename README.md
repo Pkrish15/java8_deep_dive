@@ -1,12 +1,11 @@
 # java8_deep_dive
 . What is the name and URL to the Java base image available in OCP ?<br>
-     	a) S2I Builder Image <br>
-     	b) redhat-openjdk18-openshift <br>
-     	c) Fabric8 Java Base Image OpenJDK 8 (JDK) <br>
-     	d) https://github.com/fabric8io-images/java/tree/master/images/jboss/openjdk8/jdk <br>
-     	e) https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br>
+*   S2I Builder Image <br>
+*   redhat-openjdk18-openshift <br>
+*   Fabric8 Java Base Image OpenJDK 8 (JDK) <br>
+*   https://github.com/fabric8io-images/java/tree/master/images/jboss/openjdk8/jdk <br>
+*   https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br>
 	
-
 . What are all of the environment variables that base image exposes ? <br>
 * **ARTIFACT_DIR** - The relative path to the target where JAR files are created for multi-module builds. <br>
 * **JAVA_MAIN_CLASS** - The main class to use as the argument to Java. This can also be specified in the .s2i/environment file as a Maven property inside the project (docker.env.Main).<br>
@@ -41,12 +40,12 @@
 . What other JBoss middleware builds off of this base image ? <br>
 *	redhat-openjdk-18-openshift-image
 *       JBoss-EAP7-OpenShift-Image
-*       JBoss-datagrid-7-openshift-image - https://github.com/jboss-container-images/jboss-datagrid-7-openshift-image
-* 	JBoss-amq-7-broker-OpenShift-Image - https://github.com/jboss-container-images/jboss-amq-7-broker-openshift-image
-*	JBoss-amqmaass-Image - https://github.com/jboss-container-images/jboss-amqmaas-image
-* 	JBoss-Kie-Modules- https://github.com/jboss-container-images/jboss-kie-modules
-*	amq-interconnect-1-openshift-image - https://github.com/jboss-container-images/amq-interconnect-1-openshift-image
-*	JBoss-amq-7-broker-image - https://github.com/jboss-container-images/jboss-amq-7-broker-image
+*       JBoss-datagrid-7-openshift-image 
+* 	JBoss-amq-7-broker-OpenShift-Image 
+*	JBoss-amqmaass-Image 
+* 	JBoss-Kie-Modules
+*	amq-interconnect-1-openshift-image
+*	JBoss-amq-7-broker-image
 
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?
 * 	Yes, it is possible. Because all the images extends s2i base image.
@@ -57,6 +56,7 @@
 
 . What is the directory path to the out of the box shell scripts in that base image that get executed at start-up ?<br>
 
-*	/opt/openshift/app.jar
-. What could be the various mechanisms used to add an uber jar to that base java image in an OCP environment ?
+*	/opt/openshift/app.jar <br>
+. What could be the various mechanisms used to add an uber jar to that base java image in an OCP environment ? <br>
+*	
 

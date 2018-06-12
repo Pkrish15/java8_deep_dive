@@ -29,7 +29,7 @@
 
 
 . Where is the existing support documentation for this base Java image ? <br>
-        a) https://docs.openshift.com/online/using_images/s2i_images/java.html <br>
+* 	https://docs.openshift.com/online/using_images/s2i_images/java.html <br>
 
 . What is the URL to the source code utilized to create this base Java image ?
 

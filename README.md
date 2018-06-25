@@ -5,7 +5,10 @@
 *   Fabric8 Java Base Image OpenJDK 8 (JDK) <br>
 *   https://github.com/fabric8io-images/java/tree/master/images/jboss/openjdk8/jdk <br>
 *   https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br>
-	
+. What Language these images have been written, Is there any artifacts URL? <br>
+*   Go Language <br>
+*   https://github.com/openshift/source-to-image <br>
+
 . What are all of the environment variables that base image exposes ? <br>
 * **ARTIFACT_DIR** - The relative path to the target where JAR files are created for multi-module builds. <br>
 * **JAVA_MAIN_CLASS** - The main class to use as the argument to Java. This can also be specified in the .s2i/environment file as a Maven property inside the project (docker.env.Main).<br>

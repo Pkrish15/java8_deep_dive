@@ -38,7 +38,27 @@
 *	$ oc new-build --name=<application-name> redhat-openjdk18-openshift --binary=true <br>
 
 . What other JBoss middleware builds off of this base image ? <br>
-  ![alt text](https://github.com/Pkrish15/java8_deep_dive/blob/master/ImageLayer.png)<br>
+  ![alt text](https://github.com/Pkrish15/java8_deep_dive/blob/master/ImageLayer.png)<br><br>
+  RHEL base layer
+Contains the RHEL base operating system packages as a container image. Produced by the platform team.
+
+Middleware Base layer
+Extends RHEL base image.
+
+This is a very minimalistic layer containing changes that are applicable to all Middleware images. The purpose of this layer is to provide ground base and enforce common settings for all Middleware images. This includes:
+
+Updates to the OS
+Creation of the jboss user (and group) with uid/gid 185 used to start every Middleware product process
+Setting working directory for the image: /home/jboss
+Switching to the newly created jboss user
+JDK layer
+Extends middleware base layer.
+
+This layer provides base for all Middleware products that require JDK to run, specifically:
+
+Installs OpenJDK in selected version
+Sets a few environment variables.
+
 
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?
 * 	Yes, it is possible. Because all the images extends s2i base image.

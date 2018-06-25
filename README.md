@@ -4,7 +4,7 @@
 *   redhat-openjdk18-openshift <br>
 *   Fabric8 Java Base Image OpenJDK 8 (JDK) <br>
 *   https://github.com/fabric8io-images/java/tree/master/images/jboss/openjdk8/jdk <br>
-*   https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br>
+*   https://github.com/jboss-container-images/redhat-openjdk-18-openshift-image <br><br>
 . What Language these images have been written, Is there any artifacts URL? <br>
 *   Go Language <br>
 *   https://github.com/openshift/source-to-image <br>

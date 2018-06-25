@@ -51,7 +51,7 @@ This includes:
 Updates to the OS
 Creation of the jboss user (and group) with uid/gid 185 used to start every Middleware product process
 Setting working directory for the image: /home/jboss
-Switching to the newly created jboss user
+Switching to the newly created jboss user <br><br>
 **JDK layer**<br>
 Extends middleware base layer.<br>
 This layer provides base for all Middleware products that require JDK to run, specifically:<br>

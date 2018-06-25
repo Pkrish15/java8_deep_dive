@@ -38,14 +38,7 @@
 *	$ oc new-build --name=<application-name> redhat-openjdk18-openshift --binary=true <br>
 
 . What other JBoss middleware builds off of this base image ? <br>
-*	redhat-openjdk-18-openshift-image
-*       JBoss-EAP7-OpenShift-Image
-*       JBoss-datagrid-7-openshift-image 
-* 	JBoss-amq-7-broker-OpenShift-Image 
-*	JBoss-amqmaass-Image 
-* 	JBoss-Kie-Modules
-*	amq-interconnect-1-openshift-image
-*	JBoss-amq-7-broker-image
+  ![alt text](https://github.com/Pkrish15/java8_deep_dive/blob/master/ImageLayer.png)<br>
 
 . Is it possible to upload this base Java image (or an image that extends this base Java image) to Docker Hub ?
 * 	Yes, it is possible. Because all the images extends s2i base image.

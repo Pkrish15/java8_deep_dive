@@ -51,5 +51,5 @@
 
 *	/opt/openshift/app.jar <br>
 . What could be the various mechanisms used to add an uber jar to that base java image in an OCP environment ? <br>
-*	By Running S2I Images.
+*	By Running S2I Images especially for Spring-Boot Applications.
 
